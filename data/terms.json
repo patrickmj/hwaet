@@ -1,3 +1,16 @@
-[ 
-    {'id': 1, 'term': 'hwaet!', 'sameAs':[] }
-]
+
+{
+    "hwaet":
+        {
+            "votes": 0,
+            "cheekyIps": [],
+            "sameAs": []
+        }
+    ,
+    "shit":
+        {
+            "votes": 0,
+            "cheekyIps": [],
+            "sameAs": []
+        }
+}
