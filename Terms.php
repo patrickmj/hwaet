@@ -5,13 +5,13 @@ class Term {
     protected string $term;
     protected int $votes;
     protected array $ipAddresses;
-    protected array $sameAs;
+    protected array $see;
 
     public function __construct(string $term, array $termData ) {
         $this->term = $term;
         $this->votes = $termData['votes'];
         $this->ipAddresses = $termData['ipAddresses'];
-        $this->sameAs = $termData['sameAs'];
+        $this->see = $termData['see'];
     }
 
     public function ipExists(string $ipAddress): bool {
@@ -26,8 +26,8 @@ class Term {
     }
 
 
-    public function updateSameAs(string $sameAsTerm): void {
-        $this->sameAs[] = $sameAsTerm;
+    public function updatesee(string $seeTerm): void {
+        $this->see[] = $seeTerm;
     }
 
     public function incrementVotes() {
@@ -38,7 +38,7 @@ class Term {
         $dataArray = [
             "votes" => $this->votes,
             "ipAddresses" => $this->ipAddresses,
-            "sameAs" => $this->sameAs,
+            "see" => $this->see,
         ];
 
         return $dataArray;

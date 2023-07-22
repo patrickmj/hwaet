@@ -12,6 +12,7 @@ if (isset($_GET['term'])) {
     if($ipAddress == '127.0.0.1') {
         $ipAddress = rand(1, 10000 );
     }
+    echo $ipAddress;
     $hwaet = new Hwaet($termKey, $ipAddress);
 }
 
@@ -74,10 +75,11 @@ class Hwaet {
         $termData = [
             "votes" => 1,
             "ipAddresses" => [$this->ipAddress],
-            //not worrying about whether there's a sameAs here,
-            //since that's something for moderators to monitor and
-            //update manually elsewhere
-            "sameAs" => []
+            // Not worrying about see here. That's something
+            // for moderators to deal with
+            // `see` is one-directional, pointing to the primary
+            // term to use
+            "see" => []
         ];
 
         $newTerm = new Term($this->termKey, $termData);
