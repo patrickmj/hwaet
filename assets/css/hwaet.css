@@ -1,10 +1,69 @@
+div {
+    padding: 10px;
+}
 
 
-.main 
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1 2;
+    border: 2px solid red;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+.main  {
+    
+    
+    
+}
+
+.term-groups {
+    
+}
+
+.barchart-race {
+    
+    
+}
+
+.new-term {
+    
+    
+}
 
 
+.info {
+    
+    
+    
+}
+
+.rules {
+    
+    
+}
 
 
-.info
+.links {
+    
+    
+}
 
+.cheeky-monkey-notification {
+    
+    
+    
+}
+
+
+.countdown {
+    
+    
+    
+}
 
