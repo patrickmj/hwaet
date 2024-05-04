@@ -8,7 +8,6 @@ div {
 }
 
 .flex-child {
-    flex: 1 2;
     border: 2px solid red;
 }  
 
@@ -16,29 +15,36 @@ div {
     margin-right: 20px;
 } 
 
-.main  {
-    
-    
-    
-}
-
-.term-groups {
+#main  {
+ 
+    width: 100%;
     
 }
 
-.barchart-race {
-    
+span.term {
+    width: 150px;
+}
+
+span.term-votes {
+    margin-left: 10px;
+}
+
+span.vote-meter {
+    margin-left: 20px;
+    background-color: aqua;
+}
+
+#new-term {
+   
     
 }
 
-.new-term {
-    
-    
+.links {
+    display: inline-flex;
 }
-
 
 .info {
-    
+    width: min-content;   
     
     
 }
@@ -55,7 +61,7 @@ div {
 }
 
 .cheeky-monkey-notification {
-    
+    display: none;
     
     
 }
