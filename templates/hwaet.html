@@ -6,45 +6,56 @@
         <!--<script src="../assets/js/hwaet.js"></script>-->
     </head>
     <body class="flex-containter">
-         
-        <div><h1>HWAET!</h1></div>
-         
+        <div>
+            <h1>HWAET!</h1>
+        </div>
         <div class="flex-container">
             <div class="main flex-child" id="main">
                 <div class="term-groups">
                     <p>Term Groups</p>
                 </div>
-                <div class='terms'>
+                <div class="terms">
                     <h2>DH Terms</h2>
-                        <div  data-votes='1' class='term'><span class='term'>whatever term</span><span class='vote-meter'>|||||</span><span class='term-votes'>1</span></div>
-                        <div  data-votes='2' class='term'><span class='term'>Term 2</span><span class='term-votes'>2</span></div>
-                    
-                    
-                    
+                    <div data-votes="1" class="term">
+                        <span class="term">whatever term</span>
+                        <span class="vote-meter">|||||</span>
+                        <span class="term-votes">1</span>
+                    </div>
+                    <div data-votes="2" class="term">
+                        <span class="term">Term 2</span>
+                        <span class="term-votes">2</span>
+                    </div>
                     <div class="new-term">
                         <label for="new-term">Add a DH term:</label>
                         <input type="text" name="new-term" id="new-term" />
                     </div>
                 </div>
             </div>
-
         </div>
         <div class="info" id="info">
             <h2>Rules and information</h2>
             <div class="rules">
                 <h3>Rules</h3>
+                <p>Please add a DH-related term that you've heard and want to know more about, and
+                    upvote terms already in the list. Only one upvote per person, please, lest you
+                    be a cheeky devil.</p>
+                <p>Sorry, I didn't manage to get it working well on mobile devices. My CSS-fu is weak.</p>
             </div>
             <div class="links">
                 <div class="qr-code link">QR code </div>
                 <div class="bitly link">Bitly(?) link </div>
-                <div class="cheeky-monkey-notice" id='cheeky-monkey-notice'>CHEEKY MONKEY!</div>
+                <div class="cheeky-monkey-notice" id="cheeky-monkey-notice">CHEEKY MONKEY!
+                <img id='cheeky-monkey-img' alt="Emoji of a Cheeky Devil" src='../assets/images/cheekyDevil.png' />
+                
+                </div>
             </div>
-            <div class="countdown-days"> Countdown Days </div>
-            <div class="countdown-hours"> Countdown Hours </div>
-            <div class="countdown-minutes">Countdown Minutes</div>
-        </div>        
-        <template id='termLI'>
-            <li data-votes='1' class='term'><span class='term'></span> <span>class='vote-meter'></span><span class='term-votes'></span></li>
+        </div>
+        <template id="termLI">
+            <li data-votes="1" class="term">
+                <span class="term"></span>
+                <span>class='vote-meter'>|</span>
+                <span class="term-votes"></span>
+            </li>
         </template>
     </body>
 </html>

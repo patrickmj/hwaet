@@ -60,12 +60,15 @@ span.vote-meter {
     
 }
 
-.cheeky-monkey-notification {
+#cheeky-monkey-notice {
     display: none;
     
     
 }
 
+#cheeky-monkey-img {
+    width: 50px;
+}
 
 .countdown {
     
